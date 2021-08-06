@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/976d5d14ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>UdaCity Clone</title>
+</head>
+    <body>
+        <header class="main-header">
+
+            <input type="checkbox" name="trigger" id="trigger">
+            <label for="trigger" class="burger-menu"></label>
+
+            <nav class="main-nav">
+
+                <div class="main-nav-left">
+                    <a href="#" class="logo-link"><svg class="first-logo" height="30" viewBox="0 0 180 30" width="180"><g fill="none" fill-rule="evenodd"><path d="M57.6 17.239187c0 2.546698-2.085517 4.407747-4.965517 4.407747-2.88 0-4.965517-1.86105-4.965517-4.407747V7.835994H45.68276v9.501143c0 3.330298 2.88 6.170846 6.951723 6.170846 4.071724 0 6.951724-2.938498 6.951724-6.170846V7.835994H57.6v9.403193zm16.286897-9.403193h-5.36276v15.67199h5.36276c4.468965 0 7.547586-3.03645 7.547586-7.835996 0-4.701596-3.07862-7.835994-7.547586-7.835994zm-.19862 13.71299h-3.177932V9.794994h3.17793c3.376553 0 5.76 2.252847 5.76 5.876994 0 3.917998-2.482757 5.779046-5.76 5.876996zm43.49793.29385c-3.575172 0-5.95862-2.644648-5.95862-6.170846 0-3.526197 2.482758-6.072895 5.95862-6.072895 2.78069 0 4.468966 1.5672 4.468966 1.5672l.794483-1.3713s-1.787587-1.86105-5.46207-1.86105c-4.766896 0-7.746206 3.526198-7.746206 7.738045 0 4.309797 3.07862 7.933945 7.944827 7.933945 3.773793 0 5.66069-2.5467 5.66069-2.5467l-1.092414-1.175398c-.09931-.09795-1.588965 1.959-4.568276 1.959zm14.896553-14.00684h1.986206v15.67199h-1.986207zm10.924137 1.959h4.965517v13.71299h1.986207V9.794994h4.96552v-1.959H143.0069m30.587583 0l-4.766896 7.150344-4.866207-7.150347h-2.085518l5.95862 8.717546v6.954445h1.986208v-6.954444l5.85931-8.71754m-81.434482 0l-6.157242 15.67199h1.986207l1.688276-4.5057 6.45517-1.3713 2.18483 5.876998h1.986203l-6.05793-15.67199h-2.085518zm-1.886897 9.305242l2.97931-7.248294h.099315L97.92 16.063788l-5.56138 1.07745z" fill="#2E3D49"></path><path d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z" fill="#02B3E4"></path></g></svg></a>
+
+                    <a href="#" class="logo-link"><svg class="sec-logo" height="30" viewBox="0 0 30 30" width="30"><path d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z" fill="#02B3E4" fill-rule="evenodd"></path></svg></a>
+                </div>
+    
+                <div class="main-nav-right">
+                    <ul class="main-nav-right-menu">
+                        <li class="main-nav-right-menu-items">
+                            <a href="#" class="main-nav-links">Programs</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </li>
+                        <li class="main-nav-right-menu-items">
+                            <a href="#" class="main-nav-links">Careers</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </li>
+                        <li class="main-nav-right-menu-items">
+                            <a href="#" class="main-nav-links">For Enterprice</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </li>
+                        <li class="main-nav-right-menu-items br"></li>
+                        <li class="main-nav-right-menu-items">
+                            <a href="#" class="main-nav-links">Sign In</a>
+                        </li>
+                        <li class="main-nav-right-menu-items">
+                            <span class="main-nav-right-btn">Get Started</span>
+                        </li>
+                    </ul>
+                </div>
+    
+            </nav>
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <section class="hero-first-section">
+
+                        <div class="hero-top-left">
+                            <h2 class="background-title white">Bootcamp Quality at 1/10 of the Cost</h2>
+
+                            <p class="background-text white">Udacity is the world’s fastest, most efficient way to master the skills tech<br>companies want. 100% online, part-time & self-paced.</p>
+                                
+                            <span class="background-btn">Learn More</span>
+
+                            <p class="background-text white">Industry leading programs built and recognized by top companies<br>worldwide</p>
+
+                            <div class="background-logos">
+                                <img src="https://www.udacity.com/assets/iridium/images/shared/partners/logo-white-google.svg" alt="Google" class="background-images google">
+
+                                <img src="https://www.udacity.com/assets/iridium/images/homepage/shared/partners-list/logo-white-aws.svg" alt="Aws" class="background-images aws">
+
+                                <img src="https://www.udacity.com/assets/iridium/images/shared/partners/logo-white-att.svg" alt="Atat" class="background-images atat">
+
+                                <img src="https://www.udacity.com/assets/iridium/images/homepage/shared/partners-list/logo-white-ibm.svg" alt="Ibm" class="background-images ibm">
+
+                                <img src="https://www.udacity.com/assets/iridium/images/shared/partners/logo-white-lyft.svg" alt="Lyft" class="background-images lyft">
+
+                            </div>
+                        </div>
+    
+                        <div class="hero-top-right">
+                            <table class="hero-top-table">
+                                <caption class="hero-top-table-title">Only at Udacity: <span class="bold">Job-Ready Skills</span></caption>
+
+                                <thead class="table-head">
+                                    <tr>
+                                        <th class="first-column"></th>
+                                        <th class="middle-column">UDACITY</th>
+                                        <th class="last-column">OTHERS</th>
+                                    </tr>
+                                </thead>
+
+                                <TBody>
+                                    <tr>
+                                        <td class="first-column">Learn by doing</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-column">Practitioner-level skills</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-column">Job-focused content</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-column">Real human help</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-column">Personalized code reviews</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="first-column">Real-life projects</td>
+                                        <td class="middle-column"><i class="fas fa-check"></i></td>
+                                        <td class="last-column"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                </TBody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="hero-second-section">
+
+                        <h2 class="hero-second-section-title">Explore our schools to find your perfect program</h2>
+
+                        <div class="hero-second-section-list">
+                            <ul class="hero-second-section-menu">
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">DATA SCIENCE</a></li>
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">PROGRAMMING</a></li>
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">ARTIFICIAL INTELLIGENCE</a></li>
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">CLOUD COMPUTING</a></li>
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">AUTONOMOUS SYSTEMS</a></li>
+                                <li class="hero-second-section-menu items"><a href="#" class="second-section-links">BUSINESS</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="hero-second-section-cards">
+
+                            <div class="hero-sec-cards">
+
+                                <div class="cards a">
+                                    <span class="top-background-cards">New</span>
+                                    <div class="cards-content">
+                                        <h3 class="cards-title">Data Science for Business <br>Leaders</h3>
+                                        <div class="cards-icon">
+                                            <i class="fas fa-signal ea"></i>
+                                            <span class="icons-text">Intermediate</span>
+                                        </div>
+                                        <p class="cards-text">ESTIMATED TIME</p>
+                                        <p class="cards-bottom-text">4-8 Weeks at 5 hrs/week</p>
+                                    </div>
+                                </div>
+
+                                <div class="cards b">
+                                    <span class="top-background-cards">New</span>
+                                    <div class="cards-content">
+                                        <h3 class="cards-title" id="b">Data Product Manager</h3>
+                                        <div class="cards-icon">
+                                            <i class="fas fa-signal ea"></i>
+                                            <span class="icons-text">Intermediate</span>
+                                        </div>
+                                        <p class="cards-text">ESTIMATED TIME</p>
+                                        <p class="cards-bottom-text">3 months at 10 hrs/week</p>
+                                    </div>
+                                </div>
+
+                                <div class="cards c">
+                                    <span class="top-background-cards">New</span>
+                                    <div class="cards-content">
+                                        <h3 class="cards-title">SQL</h3>
+
+                                        <div class="cards-icon-1">
+
+                                            <div class="cards-icon-1-left">
+                                                <span class="icons-text">⭐⭐⭐⭐</span>
+                                                <span class="icons-text">4.4 (43)</span>
+                                            </div>
+
+                                            <div class="cards-icon-1-right">
+                                                <i class="fas fa-signal ea"></i>
+                                                <span class="icons-text">Beginner</span>
+                                            </div>
+
+                                        </div>
+                                        <p class="cards-text">ESTIMATED TIME</p>
+                                        <p class="cards-bottom-text">2 months at 10 hrs/week</p>
+                                    </div>
+                                </div>
+
+                                <div class="cards d">
+                                    <span class="top-background-cards" id="popular">Popular</span>
+                                    <div class="cards-content">
+                                        <h3 class="cards-title">Data Analyst</h3>
+
+                                        <div class="cards-icon-1">
+
+                                            <div class="cards-icon-1-left">
+                                                <span class="icons-text">⭐⭐⭐⭐</span>
+                                                <span class="icons-text">4.6 (2642)</span>
+                                            </div>
+
+                                            <div class="cards-icon-1-right">
+                                                <i class="fas fa-signal ea"></i>
+                                                <span class="icons-text">Intermediate</span>
+                                            </div>
+
+                                        </div>
+                                        <p class="cards-text">ESTIMATED TIME</p>
+                                        <p class="cards-bottom-text">4 months at 5-10 hrs/week</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="hero-third-section">
+
+                        <h2 class="hero-third-section-title">Don't waste your valuable time or money</h2>
+
+                        <p class="hero-third-section-text">Only Udacity has all the critical factors to deliver real results</p>
+
+
+                        <div class="hero-third-cards">
+
+                            <div class="hero-third-cards-content e">
+                                <img class="hero-third-section-icons" src="/Img/5.svg" alt="">
+                                <h3 class="hero-third-section-cards-title">Get real employable skills</h3>
+                                <p class="hero-third-section-card-text">Our quality curriculum is designed with<br>top-tier industry partners, not<br>academics, so you learn the high-impact<br>skills that top companies want.</p>
+                            </div>
+
+                            <div class="hero-third-cards-content f">
+                                <img class="hero-third-section-icons" src="/Img/6.svg" alt="">
+                                <h3 class="hero-third-section-cards-title">Project-based, active learning</h3>
+                                <p class="hero-third-section-card-text">Learn by doing with real-world projects<br>and other hands-on exercises that lead<br>to real skills mastery.</p>
+                            </div>
+
+                            <div class="hero-third-cards-content g">
+                                <img src="/Img/7.svg" alt="" class="hero-third-section-icons">
+                                <h3 class="hero-third-section-cards-title">Learn on your schedule</h3>
+                                <p class="hero-third-section-card-text">Self-paced learning - whenever and<br>wherever you want. Graduate while<br>learning part-time for 10 hrs/week.</p>
+                            </div>
+
+                            <div class="hero-third-cards-content h">
+                                <img src="/Img/8.svg" alt="" class="hero-third-section-icons">
+                                <h3 class="hero-third-section-cards-title">The help you need, when you<br>need it</h3>
+                                <p class="hero-third-section-card-text">Reach out to our mentors 24/7 and have<br>your coding questions answered quickly<br>so you can keep learning.</p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="hero-fourth-section">
+                        <div class="hero-fourth-section-container">
+
+                            <h2 class="hero-fourth-section-title">Make the most of your online learning experience</h2>
+
+                            <p class="hero-fourth-section-text">Our Online Learning Resource Center has tips, tricks and inspiring stories to help you learn while staying home.</p>
+
+                            <span class="background-btn">Explore Resources</span>
+
+                        </div>
+                    </section>
+
+                </div>
+
+            </section>
+
+        </header>
+
+        <footer class="main-footer">
+
+            <section class="footer-container">
+
+                <section class="footer-first-section">
+
+                    <h2 class="footer-title">Strength in numbers</h2>
+
+                    <div class="footer-top-list">
+
+                        <ul class="footer-top-menu">
+
+                            <li class="footer-top-menu-items">
+                                <img src="/Img/footer-1.svg" alt="" class="footer-1">
+                                <h3 class="footer-items-title">100,000+</h3>
+                                <p class="footer-items-text">Udacity graduations and<br>counting</p>
+                            </li>
+
+                            <li class="footer-top-menu-items">
+                                <img src="/Img/footer-2.svg" alt="" class="footer-2">
+                                <h3 class="footer-items-title">200+</h3>
+                                <p class="footer-items-text">Industry experts partnering<br>to build our content</p>
+                            </li>
+
+                            <li class="footer-top-menu-items">
+                                <img src="/Img/footer-3.svg" alt="" class="footer-3">
+                                <h3 class="footer-items-title">100+</h3>
+                                <p class="footer-items-text">Enterprise customers world-<br>wide</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <section class="footer-second-section">
+
+                    <div class="footer-cards">
+
+                        <div class="footer-cards-content blue">
+
+                            <div class="footer-cards-images"><img src="/Img/face-1.webp" alt="" class="footer-face"></div>
+                            <div class="footer-cards-text">
+                                <h3 class="footer-cards-name">Jesse</h3>
+                            </div>
+
+                            <div class="footer-text">
+                                <q class="footer-cards-quote">The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal.</q>
+                            </div>
+
+                            <div class="footer-cards-bottom">
+                                <p class="special">NOW AT</p>
+                                <p class="special">Raytheon | Data Scientist</p>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-cards-content purple">
+
+                            <div class="footer-cards-images"><img src="/Img/face-2.webp" alt="" class="footer-face"></div>
+                            <div class="footer-cards-text">
+                                <h3 class="footer-cards-name">Sundar</h3>
+                            </div>
+
+                            <div class="footer-text">
+                                <q class="footer-cards-quote">The curriculum was aligned with what I wanted to study. The assignments are specific to the industry I’m in. I was able to develop new language translation tools for my company.</q>
+                            </div>
+
+                            <div class="footer-cards-bottom">
+                                <p class="special">NOW AT</p>
+                                <p class="special">Comcast | Lead Data Scientist</p>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-cards-content cyan">
+
+                            <div class="footer-cards-images"><img src="/Img/face-3.webp" alt="" class="footer-face"></div>
+                            <div class="footer-cards-text">
+                                <h3 class="footer-cards-name">David</h3>
+                            </div>
+
+                            <div class="footer-text">
+                                <q class="footer-cards-quote">One of the things that attracted me to Udacity was a curriculum developed by people that worked for some of the biggest and most successful tech companies.</q>
+                            </div>
+
+                            <div class="footer-cards-bottom">
+                                <p class="special">NOW AT</p>
+                                <p class="special">Panera Bread | Data Administrator</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="footer-bottom-btn">
+                        <span class="background-btn footer-btn">More Success Stories</span>
+                    </div>
+
+                </section>
+
+                <section class="footer-third-section">
+                    <div class="footer-logo">
+                        <a href="#" class="logo-link"><svg height="30" viewBox="0 0 30 30" width="30"><path d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z" fill="#02B3E4" fill-rule="evenodd"></path></svg></a>
+                    </div>
+
+                    <div class="footer-lists-container">
+
+                        <div class="footer-bottom-menu-list">
+
+                            <p class="footer-text-links">Featured Programs</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Developer for Microsoft Azure</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">RPA Developer with UiPath</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Agile Software Development</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Science for Business Leaders</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">DevOps Engineer for Microsoft Azure</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Introduction to Cybersecurity</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Intermediate JavaScript</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Monetization Strategy</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Growth Product Manager</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Java Web Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Product Manager</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">SQL</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">AI for Healthcare</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">AWS Cloud Architect</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Intel® Edge AI for IoT Developers</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Product Manager</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">AI for Business Leaders</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Intro to Machine Learning with TensorFlow</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Streaming</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">UX Designer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">AI Product Manager</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Sensor Fusion Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Visualization</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Cloud Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Cloud Dev Ops Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">C++</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Structures and Algorithms</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Marketing Analytics</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Android Basics</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Android Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">iOS Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Business Analytics</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Data Analyst</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Front End Web Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Full Stack Web Developer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Intro to Programming</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Intro to Machine Learning</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Machine Learning Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Predictive Analytics for Business</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Programming for Data Science with Python</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Programming for Data Science with R</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">React</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-bottom-menu-list">
+
+                            <p class="footer-text-links">ONLY AT UDACITY</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Artificial Intelligence</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Deep Learning</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Digital Marketing</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Flying Car and Autonomous Flight Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Intro to Self-Driving Cars</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Machine Learning Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Robotics Software Engineer</a></li>
+                            </ul>
+
+                            <p class="footer-text-links">UDACITY SCHOOLS</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Self-Driving Car Engineer</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Artificial Intelligence</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Autonomous Systems</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Business</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Data Science</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Programming</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">School of Cloud Computing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-bottom-menu-list">
+
+                            <p class="footer-text-links">RESOURCES</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Catalog</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Career Resource Center</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Career Services</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Student Success</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Udacity Talks</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Scholarships</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">What is AI?</a></li>
+                            </ul>
+
+                            <p class="footer-text-links">PROGRAMS</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Veterans</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Georgia Tech</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-bottom-menu-list">
+
+                            <p class="footer-text-links">COMPANY</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">About</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Blog</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">In the News</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Jobs</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Udacity Intersect</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Become an Instructor</a></li>
+                            </ul>
+
+                            <p class="footer-text-links">ENTERPRISE</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Udacity for Enterprise</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Enterprise Resource Center</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-bottom-menu-list">
+
+                            <p class="footer-text-links">SUPPORT</p>
+
+                            <ul class="footer-bottom-menu">
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Contact Us</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Help and FAQ</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Service Status</a></li>
+                                <li class="footer-bottom-menu-items"><a href="#" class="footer-links">Tech Requirements</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="footer-fourth-section">
+
+                    <hr class="footer-line">
+
+                    <section class="footer-copyright-list">
+
+                        <div class="footer-list-left">
+
+                            <ul class="footer-left-menu">
+                                <li class="footer-left-menu-items"><p class="footer-left-items-text"> © 2011–2020 Udacity, Inc.</p></li>
+                                <li class="footer-left-menu-items"><a href="#" class="footer-left-items-links">Legal & Privacy</a></li>
+                                <li class="footer-left-menu-items"><a href="#" class="footer-left-items-links">Site Map</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-list-right">
+
+                            <ul class="footer-right-menu">
+                                <li class="footer-right-menu-items"><a href="#" class="end-page-links"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="footer-right-menu-items"><a href="#" class="end-page-links"><i class="fab fa-twitter"></i></a></li>
+                                <li class="footer-right-menu-items"><a href="#" class="end-page-links"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                <li class="footer-right-menu-items"><a href="#" class="end-page-links"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="footer-right-menu-items"><a href="#" class="end-page-links"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+                <section class="footer-end-section">
+                    <div class="footer-end-text">
+                        <p class="end-page-text">"Nanodegree" is a registered trademark of Udacity. © 2011–2020 Udacity, Inc.</p>
+                        <p class="end-page-text">Udacity is not an accredited university and we don't confer traditional degrees. Udacity Nanodegree programs represent collaborations with our industry partners who help us develop our content and who hire many of our program graduates.</p>
+                    </div>
+                </section>
+
+            </section>
+        </footer>
+    </body>
+</html>
